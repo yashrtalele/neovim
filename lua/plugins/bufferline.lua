@@ -11,12 +11,10 @@ return {
 				left_mouse_command = "buffer %d",
 				middle_mouse_command = nil,
 				indicator = {
-					icon = "▎ ",
-					style = "icon",
+					icon = "▎",
+					-- style = "icon",
 				},
-				buffer_close_icon = "",
-				modified_icon = "●",
-				close_icon = "",
+				modified_icon = "",
 				left_trunc_marker = "",
 				right_trunc_marker = "",
 				max_name_length = 18,
@@ -35,26 +33,18 @@ return {
 					return true
 				end,
 				show_buffer_icons = false,
-				show_buffer_close_icons = true,
-				show_close_icon = true,
-				show_tab_indicators = true,
+				show_buffer_close_icons = false,
+				show_close_icon = false,
+				show_tab_indicators = false,
 				persist_buffer_sort = true,
-				separator_style = "bar",
+				separator_style = { " ", " " },
 				enforce_regular_tabs = false,
 				always_show_bufferline = true,
 				sort_by = "id",
 			},
 			highlights = require("catppuccin.groups.integrations.bufferline").get({
-				styles = { "bold" },
+				styles = {},
 			}),
-			-- highlights = {
-			--   buffer_selected = {
-			--     italic = false,
-			--   },
-			--   tab_selected = {
-			--     italic = false,
-			--   },
-			-- },
 		})
 		vim.keymap.set("n", "<space>bp", "<cmd>BufferLinePick<CR>", {
 			desc = "pick a buffer",
