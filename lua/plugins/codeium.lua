@@ -1,6 +1,6 @@
 return {
 	"Exafunction/codeium.vim",
-	-- enabled = false,
+	-- enabled = true,
 	cmd = { "CodeiumEnable", "CodeiumDisable" },
   -- stylua: ignore
   keys = {
