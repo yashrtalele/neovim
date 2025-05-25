@@ -1,0 +1,32 @@
+local opt = vim.opt
+
+opt.autoindent = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+opt.autowrite = true
+opt.autoread = true
+opt.backspace = { "indent", "eol", "start" }
+opt.backup = false
+opt.breakindent = true
+opt.clipboard = "unnamedplus"
+opt.cursorline = true
+opt.expandtab = true
+
+opt.foldmethod = "indent"
+opt.foldlevel = 99
+opt.foldlevelstart = 99
+opt.number = true
+opt.nu = true
+opt.relativenumber = true
+opt.signcolumn = "yes"
+opt.smartcase = true
+opt.smartindent = true
+opt.smoothscroll = true
+opt.splitbelow = true
+opt.splitright = true
+opt.swapfile = false
+opt.confirm = true
+opt.termguicolors = true
+opt.incsearch = true
